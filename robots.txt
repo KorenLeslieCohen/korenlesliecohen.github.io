@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://KorenLeslieCohen.github.io/sitemap.xml 
