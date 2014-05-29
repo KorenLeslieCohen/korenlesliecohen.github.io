@@ -1,0 +1,389 @@
+/*
+ * Copyright (c) 2013 Koren Leslie Cohen
+ */
+
+/* Global -------> */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Advent Pro', garamond, georgia, arial;
+}
+
+/* Headings -------> */
+h1 {
+	padding: 10px 0px 0px;
+	color: #f9398c;
+}
+
+.blog h1 {
+	color: black;
+}
+
+/* Paragraphs -------> */
+p {
+	padding: 0% 4% 0% 4%;
+	font-size: 1.875em;
+	color: black;
+}
+
+header p,
+.projects p,
+.contact p {
+	color: white;
+}
+
+header p {
+	font-size: 1.5em;
+}
+
+header p span {
+	font-family: 'Give You Glory';
+	font-size: 1.7em;
+	color: #f9398c;
+}
+
+footer p {
+	padding: 5px;
+	font-size: 1em;
+}
+
+/* Links -------> */
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: #f9398c;
+	text-decoration: none;
+}
+
+/* About & Contact Links -------> */
+.contact a {
+	color: #f9398c;
+	border-radius: 5px;
+}
+
+.contact a:hover {
+	color: white;
+	background: none;
+}
+
+/* Blog Links -------> */
+.tech a, 
+.travel a {
+	color: #f9398c;
+	background: white;
+	opacity: .9;
+	border-radius: 5px;
+	transition-duration: .5s;
+}
+
+.tech a:hover, 
+.travel a:hover {
+	color: black;
+	transition-property: color, background;
+	transition-duration: .5s;
+	background: none;
+}
+
+/* Home & Footer Links -------> */
+li:first-child a,
+footer a {
+	color: #f9398c;
+}
+
+li:first-child a:hover,
+footer a:hover {
+	color: black;
+}
+
+/* Layout -------> */
+nav,
+header,
+.about,
+.projects,
+.blog,
+.contact,
+footer {
+	width: 100%;
+}
+
+header,
+.about,
+.projects,
+.blog,
+.contact,
+footer {
+	margin: 0px;
+}
+
+.about,
+.blog {
+	height: 600px;
+}
+
+header,
+.projects,
+.contact {
+	height: 550px;
+}
+
+.about,
+.projects,
+.blog,
+.contact {
+	padding: 70px 10px 10px;
+}
+
+/* Nav Bar -------> */
+nav {
+	padding: 10px .5% 10px .5%;
+	background: white;
+	background-image: url("images/foggy_birds.png");
+	position: fixed;
+	z-index: 1;
+	border-bottom: solid 1px;
+    -webkit-box-shadow: 0 8px 6px -6px gray;
+       -moz-box-shadow: 0 8px 6px -6px gray;
+            box-shadow: 0 8px 6px -6px gray;
+	opacity: .95;
+	display: none;
+}
+  		
+nav ul  {
+	list-style-type: none;
+	padding-right: 4%;
+	font-size: 1.25em; 
+}		
+
+nav li {
+	display: inline;
+	float: left;
+	padding: .5% 2% 1.5% 2%;
+	}
+
+li:nth-last-child(-n+3) {
+	color: red;
+	float: right;
+}
+
+/* Header -------> */
+header {
+	padding: 100px 10px 10px 10px;
+	background: black;
+	background-image: url("images/skylinebw.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/* About Section -------> */
+.about {
+	background: white;
+	background-image: url("images/bubble.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.description {
+	background: url("images/korenlc.png") center no-repeat;
+	background-size: 350px 490px;
+}
+
+/* Services Section -------> */
+.projects {
+	background: pink;
+	background-image: url("images/skylinebw.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/* Blog Section -------> */
+.blog {
+	background: grey;
+	background-image: url("images/bubbles.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/* Contact Section -------> */
+.contact {
+	background: pink;
+	background-image: url("images/skylinebw.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/* Footer -------> */
+footer {
+	height: 75px;
+	padding: 5px 10px;
+	border-top: solid 1px;
+	background: grey;
+	background-image: url("images/foggy_birds.png");
+}
+
+/* Blog Boxes -------> */
+.tech,
+.travel {
+	height: 400px;
+	width: 30%;
+	max-width: 450px;
+	border-radius: 15px;
+	color: #f9398c;
+	padding: 20px;
+	-webkit-box-shadow: 6px 6px 6px -3px black;
+       -moz-box-shadow: 6px 6px 6px -3px black;
+            box-shadow: 6px 6px 6px -3px black;
+}
+
+.tech,
+.travel {
+	transition-property: background-image;
+	transition-duration: .5s;
+}
+
+.tech {
+	float: left;
+	margin-left: 10%;
+	background-image: url("images/projectsbw.jpg"), url("images/projects.jpg");
+}
+
+.travel {
+	float: right;
+	margin-right: 10%;
+	background-image: url("images/centralpark.jpg"), url("images/centralparkcolor.jpg");
+}
+
+.tech:hover,
+.travel:hover {
+	color: black;
+	transition-property: background-image;
+	transition-duration: .5s;
+	-webkit-box-shadow: 6px 10px 15px -3px black;
+       -moz-box-shadow: 6px 10px 15px -3px black;
+            box-shadow: 6px 10px 15px -3px black;	
+}
+
+.tech:hover {
+	background-image: url("images/projects.jpg"), url("images/projectsbw.jpg");
+}
+
+.travel:hover {
+	background-image: url("images/centralparkcolor.jpg"), url("images/centralpark.jpg");
+}
+
+/* iPhone -------> */
+@media only screen and (max-device-width : 480px) {
+	p {
+		font-size: 1.5em;
+	}
+	
+	header,
+	.projects,
+	.contact {
+	background-attachment: scroll; 
+	background-size: auto;
+	height: 500px; 
+	}
+	
+	.description {
+		background-size: 290px 400px;
+	}	
+}
+
+/* iPad -------> */
+@media only screen  and (max-device-width : 768px) and (max-device-width : 1024px) {
+	p {
+		font-size: 1.5em;
+	}
+	
+	header,
+	.projects,
+	.contact {
+	background-attachment: scroll;
+	background-size: auto;
+	height: 500px; 
+	}
+	
+	.about {
+		height: 500px;
+	}
+	
+	.description {
+		background-size: 290px 400px;
+	}
+}
+
+/* Smaller Screens - 600px Breakpoint -------> */
+@media screen and (max-width : 600px) {
+	p {
+		font-size: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	nav {
+		padding: 1% 0% 2.5% 0%;
+	}
+  		
+	nav ul  {
+		padding-right: 10px;
+		padding-left: 10px;
+		font-size: 20px; 
+	}		
+
+	nav li {
+		padding: .5% 1.5% 1.5% 1.5%;
+	}
+	
+	.about {
+		height: 500px;
+	}
+	
+	.description {
+		background-size: 290px 400px;
+	}
+
+	.tech,
+	.travel {
+		height: 375px;
+	}
+
+	footer p {
+		font-size: 15px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.twitter {
+		max-width: 300px;
+	}
+	
+}
+
+/* Smaller Screens - 500px Breakpoint -------> */
+@media screen and (max-width : 500px) {
+	
+	.tech,
+	.travel {
+		float: none;
+		margin: 20px;
+		height: 175px;
+		width: 60%;
+	}
+}
+
+/* Smaller Screens - 450px Breakpoint -------> */
+@media screen and (max-width : 450px) {
+
+	li:nth-last-child(-n+3) {
+		display: none;
+	}
+	
+	nav {
+		padding-left: 10%;
+	}
+}
+
