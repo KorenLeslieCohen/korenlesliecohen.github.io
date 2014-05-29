@@ -1,5 +1,5 @@
 /*
-Syntax error: Invalid CSS after "  font-family": expected "{", was "='Give You Glor..."
+Syntax error: Invalid CSS after "  font-family": expected "{", was "='Give You Glory';"
         on line 5 of /Users/korenlcohen/octopress/sass/custom/_styles.scss
         from line 10 of /Users/korenlcohen/octopress/sass/screen.scss
 
@@ -71,4 +71,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"  font-family\": expected \"{\", was \"='Give You Glor...\"\A         on line 5 of /Users/korenlcohen/octopress/sass/custom/_styles.scss\A         from line 10 of /Users/korenlcohen/octopress/sass/screen.scss\A \A 1: /Users/korenlcohen/octopress/sass/screen.scss"; }
+  content: "Syntax error: Invalid CSS after \"  font-family\": expected \"{\", was \"='Give You Glory';\"\A         on line 5 of /Users/korenlcohen/octopress/sass/custom/_styles.scss\A         from line 10 of /Users/korenlcohen/octopress/sass/screen.scss\A \A 1: /Users/korenlcohen/octopress/sass/screen.scss"; }
